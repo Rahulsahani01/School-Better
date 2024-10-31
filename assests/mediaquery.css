@@ -1,0 +1,363 @@
+@media screen and (max-width: 1024px) {
+  /* -----------------------------managing homepage---------------    */
+
+  .homepage-content-footer ul {
+    gap: 25px;
+  }
+  .homepage {
+    /* flex-direction: column; */
+  }
+  .homepage-content h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+  .underline {
+    bottom: -10px;
+  }
+  #signup_btn {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+  #demo_btn {
+    font-weight: var(--weight-medium);
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+  .homepage-content p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  h1 {
+    font-weight: var(--weight-large);
+    font-size: 3rem;
+  }
+  p {
+    font-weight: var(--weight-small);
+    font-size: 1rem;
+  }
+  /* ---------------------------toolpage------------------ */
+  
+  
+  /* -----------------------------navbar-------------------- */
+}
+@media screen and (max-width: 970px) {
+  nav,
+  .nav-links {
+    gap: 30px !important;
+  }
+  .nav-links a,
+  .nav-buttons button {
+    font-weight: var(--weight-medium);
+    font-size: 0.9rem;
+    color: var(--black-color);
+  }
+  .nav-buttons button {
+    border: 2px solid var(--black-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 788px) {
+  /* ------------------------NAVBAR---------------------------------------- */
+  .link,
+  .nav-buttons {
+    display: none;
+  }
+  nav {
+    gap: 10px !important;
+  }
+  .menu {
+    display: block;
+    width: 15px;
+    height: auto;
+  }
+
+  .dropdownmenu {
+    position: absolute;
+    width: fit-content;
+    background: var(--dropdown-bg-color);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    overflow: hidden;
+    top: 4.5rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 0;
+    z-index: 2;
+    font-size: var(--font-para);
+    font-weight: var(--weight-medium);
+    min-width: 200px;
+    border: 2px solid var(--black-color);
+  }
+
+  .dropdownmenu.open {
+    display: flex;
+    height: fit-content;
+    padding: 1rem;
+  }
+  .dropdownmenu a,
+  .dropdownmenu button {
+    font-weight: var(--weight-medium);
+    font-size: var(--font-small);
+    color: var(--black-color);
+  }
+
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .text-card p{
+    font-size: 1rem !important;
+    
+  }
+
+  /* --------------------------------------homepage--------------------------    */
+  .homepage-content {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .underline {
+    bottom: -15px !important;
+  }
+  #content_para {
+    text-align: center;
+  }
+  .homepage-image {
+    width: 100%;
+  }
+
+  .homepage-content-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .homepage-content-footer ul {
+    gap: 25px;
+  }
+  .homepage {
+    flex-direction: column;
+  }
+  .homepage-content h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .homepage-content p {
+    font-size: 1.2rem !important;
+    text-align: center;
+  }
+  #teach_underline {
+    position: relative;
+  }
+  .underline {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+  }
+  .underline img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .homepage-content p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  h1 {
+    font-weight: var(--weight-large);
+    font-size: 3rem;
+  }
+  p {
+    font-weight: var(--weight-small);
+    font-size: 1rem;
+  }
+
+  /* -----------------homepage-----img------------------------------- */
+
+
+}
+@media screen and (max-width: 788px) {
+  .prev,
+  .next {
+    border: 3px solid var(--orange-color);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 757px){
+  .footer-list-container{
+    flex-wrap: wrap;
+    
+  }
+
+}
+/* ----------------------------toolpage------------------- */
+@media screen and (max-width: 667px) {
+
+}
+
+@media screen and (max-width: 425px) {
+  .homepage-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .underline {
+    bottom: -10px !important;
+  }
+  .homepage-content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .homepage-buttons {
+    display: flex;
+  }
+  #signup_btn {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #demo_btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #demo_btn img {
+    width: 1rem;
+  }
+  h1 {
+    font-weight: var(--weight-large);
+    font-size: 2rem;
+  }
+  p {
+    font-weight: var(--weight-small);
+    font-size: 0.9rem;
+  }
+  .homepage-buttons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .homepage-buttons > #signup_btn{
+    width: 100%;
+  
+  }
+  
+
+  /* ------------------------------------------toolpage-------------------------- */
+  
+  .icon-slide img{
+    transform :scale(0.6) ;
+
+  }
+  .icon-slide img{
+    padding-left: 2rem;
+  }
+  
+  /* -----------------------------------------------cardpart------------------- */
+  .text-part {
+    gap: 5px;
+  }
+
+  .btn-slider{
+    display: none;
+  }
+
+
+}
+@media screen and (max-width: 320px) {
+  .homepage-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .underline {
+    bottom: -10px !important;
+  }
+  .homepage-content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .homepage-buttons {
+    display: flex;
+  }
+  .homepage-content-footer ul {
+    gap: 10px;
+  }
+  #signup_btn {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #demo_btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+
+
+
+  /* ----------------cardpage---------------------------------------- */
+  .prev,
+  .next {
+    padding: 0.3rem;
+  }
+
+}
+
+/* ---------------------managing footer--------------------------------- */
+@media screen and (max-width: 590px) {
+  .footerend {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    row-gap: 5px;
+  }
+  .footerend ul {
+    gap: 5px;
+    font-size: 15px;
+  }
+}
+
+
+/* ---------------------homeimage----------------------- */
+@media screen and (max-width: 768px){
+  .homepage{
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .img-home{
+    width: 100%;
+    min-height: 30rem;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .img-home{
+    width: 100%;
+    min-height: 18rem;
+  }
+  .img-icon{
+    right: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .img-home{
+    width: 100%;
+    min-height: 15rem;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .img-home{
+    width: 100%;
+    min-height: 10rem;
+  }
+  
+}

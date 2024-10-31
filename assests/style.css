@@ -1,0 +1,516 @@
+:root {
+  /* ------------Fixed size----------------------- */
+  --header-height: 96px;
+
+  /* --------colors----------------------------------- */
+  --white-color: #ffffff;
+  --blue-color: #2563eb;
+  --black-color: #000000;
+  --orange-color: #ea580c;
+  --yellow-color: #facc15;
+  --navy-color: #0f172a;
+  --footer-text-color: #e2e8f0;
+  --toolpage-bg-color: #f1f5f9;
+  --cardpage-grey-color:#475569;
+  --shadow-color:rgb(207, 207, 207);
+
+
+  /* ------------------gap----padding-----margins-------------- */
+
+  /* ---------------------------fonts------------------- */
+  --weight-large: 800;
+  --weight-medium: 500;
+  --weight-small: 400;
+
+  --font-heading: 3.5rem;
+  --font-para: 1.25rem;
+  --font-small: 1rem;
+}
+/* ===============================common=========================== */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: roboto;
+  box-sizing: border-box;
+}
+
+.cpadding {
+  padding: 50px;
+}
+
+.flexrow {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+h1 {
+  font-weight: var(--weight-large);
+  font-size: var(--font-heading);
+}
+p {
+  font-weight: var(--weight-small);
+  font-size: var(--font-para);
+  color: var(--black-color);
+}
+/* ===============================hovers========================= */
+.navbtnhover:hover {
+  transform: scale(1);
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+#signup_btn:hover {
+  transform: scale(1.05);
+  background-color: var(--white-color);
+  color: var(--orange-color);
+  border: 2px solid var(--orange-color);
+  
+}
+#demo_btn:hover {
+  transform: scale(1.05);
+ 
+  border: 2px solid var(--blue-color);
+}
+.card-items:hover{
+  transform: scale(1.05);
+
+}
+/* ================================header=================== */
+header {
+  width: 100%;
+  padding: 0 50px;
+  position: fixed;
+  background-color: var(--white-color);
+  z-index: 100;
+  
+}
+nav {
+  height: var(--header-height);
+  justify-content: space-between;
+}
+.nav-links a,
+.nav-buttons button {
+  font-weight: var(--weight-medium);
+  font-size: var(--font-small);
+  color: var(--black-color);
+  background-color: var(--white-color);
+
+}
+
+.resource-dropdown{
+ margin-left:8px;
+ text-align: center;
+}
+.nav-buttons button {
+  border: 2px solid var(--black-color);
+  padding: 10px 30px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+#navloginbtn{
+  border: none;
+}
+
+.menu {
+  display: none;
+  width: 15px;
+  height: auto;
+}
+.dropdownmenu {
+  display: none;
+}
+.resource-link a{
+  display: flex;
+  flex-direction: row;
+}
+
+/* ---------------------------------------resource-menu---------------------- */
+.resourcemenu{
+  display:none !important;
+
+}
+.resourcemenu {
+  
+  position: absolute;
+    width: fit-content;
+    background: var(--dropdown-bg-color);
+    top: 80px;
+    left: 600px;
+    height: 0;
+    z-index: 2;
+    
+  white-space: nowrap;
+ 
+    /* border: 2px solid var(--black-color); */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+}
+.resourcemenu a{
+  font-size: var(--font-small);
+    font-weight: var(--weight-small);
+    color: var(--black-color);
+
+}
+.resourcemenu .open{
+  width: 50px;
+  height: 50px;
+
+}
+/* ------------------------------------------------------------------------ */
+
+/* --------------------homepage---------------- */
+.homepage {
+  width: 100%;
+  /* padding-top: var(--header-height); */
+  padding: 150px 50px;
+  
+}
+.homepage-content {
+  width: 50%;
+  row-gap: 50px;
+}
+.homepage-buttons {
+  text-align: left;
+}
+.homepage-content h1 {
+  font-size: 4.5rem;
+  text-align: left;
+}
+#teach_underline {
+  position: relative;
+}
+.underline {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: -1;
+}
+.underline img {
+  width: 100%;
+  object-fit: cover;
+}
+.homepage-content p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+#signup_btn {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.2rem 2.5rem;
+  background-color: var(--orange-color);
+  border-radius: 15px;
+  color: var(--white-color);
+  margin-right: 10px;
+  border: none;
+  border: 2px solid transparent;
+  
+}
+#demo_btn {
+  font-weight: var(--weight-medium);
+  font-size: 1.25rem;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 15px;
+  color: var(--blue-color);
+  border: 2px solid transparent;
+  background-color: var(--white-color);
+  
+}
+#demo_btn img {
+  position: relative;
+  top: 3px;
+}
+.homepage-content-footer p {
+  font-size: var(--font-small) !important;
+}
+.homepage-content-footer{
+  justify-content: flex-start;
+  gap: 50px;
+}
+/* ----------------------------homepageimage ----------------- */
+.img-home{
+  width: 50%;
+  position: relative;
+  
+  overflow: hidden;
+  gap: 0px !important;
+  min-height: 30rem;
+}
+.teacher-img  img{
+  position:absolute;
+  width: 30%;
+  bottom: 0;
+}
+.chat-img img{
+  position:absolute;
+  width: 20%;
+  top: 0;
+}
+
+.img-icon img{
+  position:absolute;
+  width: 20%;
+  bottom: 0;
+  
+  
+}
+.student-img img{
+  position: absolute;
+}
+.student-img img{
+  width: 30%;
+  /* height: 20px; */
+  right: 0;
+  top: 0;
+}
+
+
+
+/* -------------------------------------------page 2--------------------- */
+
+
+.toolpage {
+  background-color: var(--toolpage-bg-color);
+  padding: 50px 0;
+
+  gap: 50px;
+}
+
+
+.toolpage-image {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.leftblob{
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 30%;
+  height: 80%;
+}
+.rightblob{
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 30%;
+  height: 80%;
+}
+.desktop{
+  position: relative;
+  width: 90%;
+
+  z-index: 2;
+  
+}
+
+@keyframes slide {
+from {
+  transform:translateX(0);
+}  
+to{
+  transform: translateX(-100%);
+}
+
+}
+.toolpage-icons{
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.toolpage-icons:hover .icon-slide{
+  animation-play-state: paused;
+  cursor: pointer;
+
+
+}
+.icon-slide{
+  display: inline-block;
+  justify-content: space-around;
+
+  animation:  15s slide infinite linear;
+}
+.icon-slide img{
+  padding-left: 4rem;
+}
+
+/* --------------------------card-page-------------------------------------------- */
+.text-part-card {
+  align-items: center;
+}
+
+.prev,
+.next {
+  border: 3px solid var(--orange-color);
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-right: 10px;
+}
+
+.card-items {
+
+  box-shadow: 6px 6px 10px var(--shadow-color);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card-list{
+  display: flex;
+  gap: 20px;
+}
+.card-bottom {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.card-items {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  height: auto;
+  gap: 50px;
+}
+.card-items p {
+  font-size: var(--font-small);
+}
+.container {
+  padding: 50px 0;
+}
+.btn-slider {
+  display: flex;
+}
+.card-bottom-text{
+  text-align: left;
+}
+.card-bottom-text .designation{
+  color: var(--cardpage-grey-color);
+}
+.text-card p{
+  font-size: 18px !important;
+
+}
+.btn-slider button{
+  background-color: var(--white-color) !important;
+
+}
+/* --------------------------------------lastpage------------joinpage-------- */
+
+.joinpage {
+  position: relative;
+  text-align: center;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  gap: 50px;
+  background-color: var(--yellow-color);
+  width: 100%;
+ overflow: hidden;
+}
+
+.joinpage-content{
+  background-color: var(--yellow-color);
+  border-radius: 30px;
+
+}
+.imgcardone{
+  position: absolute;
+  left: -4%;
+  width: 30%;
+  height: 90%;
+  object-fit: contain;
+}
+.imgcardtwo{
+  position: absolute;
+  right: -9%;
+  width: 40%;
+  height: 90%;
+  object-fit: contain;
+}
+.joinpage-content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10% 0;
+  
+}
+#signup_btn{
+  width:40% ;
+  white-space: nowrap;
+}
+
+
+/* ------------------------------------footer---------------------------- */
+footer {
+  background-color: var(--navy-color);
+  
+  color: var(--footer-text-color);
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  padding-bottom: 0px !important;
+   
+}
+
+.footer-img{
+  flex-basis: 20%;
+}
+.footer-list-container{
+  flex-basis: 80%;
+}
+.footerline{
+  border: 1px solid var(--cardpage-grey-color);
+  margin: 20px 0;
+  width: 100%;
+}
+.footer-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  text-align: left;
+  
+}
+.footer-list ul li{
+  white-space: nowrap !important;
+}
+
+
+
+.footerend { 
+  background-color: var(--navy-color);
+  color: var(--footer-text-color);
+  padding: 0 50px;
+}
+.footerend ul {
+  gap: 20px;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.footerpage label {
+  font-weight: bold;
+  display: flex;
+  
+  text-align: left;
+}
